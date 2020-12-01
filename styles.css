@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', 'san-serif';
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  perspective: 1000px;
+}
+
+.container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: blue; */
+}
+
+.card_container {
+  transform-style: preserve-3d;
+  min-height: 80vh;
+  width: 35rem;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2), 0px 20px 20px rgba(0, 0, 0, 0.7);
+  border-radius: 30px;
+  background-color: white;
+  transition: all 0.75s ease-out;
+}
+
+.image_container {
+  min-height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image_container img {
+  width: 20rem;
+  z-index: 2;
+  transition: all 0.87s ease-out;
+}
+
+.circle {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  background: linear-gradient(
+    to right,
+    rgba(245, 70, 66, 0.75),
+    rgba(8, 83, 156, 0.75)
+  );
+  position: absolute;
+}
+
+.button_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 20px;
+  transition: all 0.87s ease-out;
+}
+.button_container button {
+  border: none;
+  padding: 0.5rem 2rem;
+  font-weight: bold;
+  background-color: white;
+  color: gray;
+  background: none;
+  cursor: pointer;
+  border-radius: 30px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s ease-out;
+}
+
+.button_container button:hover {
+  background-color: gray;
+  color: white;
+  transform: scale(1.4);
+}
+
+.info_container {
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding-left: 20px;
+  transition: all 0.75s ease-out;
+}
+h2.title {
+  transition: all 0.75s ease-out;
+}
+.info_container h5 {
+  font-size: 10px;
+  color: gray;
+  transition: all 0.75s ease-out;
+}
+
+.bigButton__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 20px;
+  transition: all 0.75s ease-out;
+}
+.bigButton__container button {
+  width: 100%;
+  border-radius: 30px;
+  border: none;
+  padding: 10px 10px;
+  background-color: crimson;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s ease-out;
+}
+
+.bigButton__container button:hover {
+  background-color: rgb(245, 159, 176);
+  color: crimson;
+  transform: scale(1.01);
+}
